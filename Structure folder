@@ -1,0 +1,48 @@
+ip-management-system/
+├── README.md
+├── .gitignore
+├── requirements.txt
+├── config/
+│   ├── __init__.py
+│   ├── settings.py
+│   └── constants.py
+├── src/
+│   ├── __init__.py
+│   ├── core/
+│   │   ├── __init__.py
+│   │   ├── ip_registry.py
+│   │   ├── rights_manager.py
+│   │   └── document_generator.py
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── ip_assets.py
+│   │   └── rights_holders.py
+│   ├── api/
+│   │   ├── __init__.py
+│   │   ├── routes.py
+│   │   └── auth.py
+│   └── utils/
+│       ├── __init__.py
+│       ├── validators.py
+│       └── helpers.py
+├── scripts/
+│   ├── setup_database.py
+│   ├── backup_ip_data.py
+│   └── generate_reports.py
+├── tests/
+│   ├── __init__.py
+│   ├── test_ip_registry.py
+│   ├── test_rights_manager.py
+│   └── test_models.py
+├── docs/
+│   ├── api.md
+│   ├── setup.md
+│   └── usage.md
+├── templates/
+│   ├── ip_registration_form.html
+│   ├── rights_agreement.html
+│   └── ip_certificate.html
+└── docker/
+    ├── Dockerfile
+    ├── docker-compose.yml
+    └── nginx.conf
